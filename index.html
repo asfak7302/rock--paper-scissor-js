@@ -4,10 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game</title>
-    <h2>Welcome to Stone, Paper, Scissor Game</h2>
+    
+    <style>
+    body{
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100vh;
+   
+    }
+     .container{
+       background-color: black;
+       color: white;
+       height: 500px;
+       width: 450px;
+       padding:100px ;
+       border-radius: 20px;
+     }
+     h2{
+       color: white;
+       font-size: 50px;
+     }
+     h3{
+       margin-top: 100px;
+       font-size: 30px;
+     }
+     button{
+       background-color: lightblue;
+       color: black;
+       padding: 10px;
+       width: 140px;
+       border-radius: 20px;
+     }
+    </style>
 </head>
 <body>
+  <div class=container>
+    <h2>Welcome to Stone, Paper, Scissor Game</h2>
+    <h3>click here to play the game</h3>
+    <button onclick="c()">lets go</button>
+  </div>
   <script>
+    function c(){
     let playgame=confirm("shall we play a game");
 if(playgame) {
    let playerchoice=prompt("please enter stone or paper or scissor");
@@ -29,7 +69,9 @@ if(playgame) {
 } else {
     alert("No problem you can play when you feel free");
 }
+}
 
   </script>
+  
 </body>
 </html>
